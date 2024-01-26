@@ -66,7 +66,11 @@ public class BaseTest {
 	@BeforeClass
 	protected void setup() {
 //		System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
+		String chrome64_122 = "C:\\Users\\ravi_\\source\\repos\\webdirvers\\chromedriver-win64\\chromedriver-win64";
+		String chrome32_120 = "C:\\Users\\ravi_\\source\\repos\\webdirvers\\chromedriver_win32";
+		System.setProperty("webdriver.chrome.driver", chrome32_120+"\\chromedriver.exe");
+		//WebDriverManager.chromedriver().driverVersion("120.0.6099.225").setup();
 		ChromeOptions ops = new ChromeOptions();
 		ops.addArguments("disable-infobars");
 		driver = new ChromeDriver(ops);

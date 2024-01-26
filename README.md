@@ -6,7 +6,7 @@ A sample framework based on Page Object Model, Selenium, TestNG using Java.
 
 This framework is based in **Page Object Model (POM).**
 
-The framework uses:
+The framework uses are defined as below:
 
 1. Java
 2. Selenium
